@@ -21,12 +21,13 @@ int main() {
   cin >> n;
   cout << endl;
   int *mas = new int[n];
-
+  сout << "Unsorted array:" << endl;
   for (int i = 0; i < n; i++) {
     mas[i] = rand() % 100;
     cout << mas[i] << "  ";
   }
   cout << endl;
+  cout << "Sorted array:" << endl;
   sort(n, mas);
   delete[] mas;
   return 0;
